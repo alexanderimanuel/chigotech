@@ -1,0 +1,138 @@
+.game-section {
+  padding: 3rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  background: rgba(255, 230, 240, 0.8) !important;
+  border: 4px dashed #FF6B6B !important;
+  text-align: center;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--secondary-color);
+  transition: width 0.5s ease-in-out;
+}
+
+.game-question {
+  font-size: 2.2rem;
+  color: var(--quaternary-color);
+  margin-bottom: 2rem;
+  animation: pulse-soft 2s infinite alternate;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.option-btn {
+  font-size: 1.2rem;
+  padding: 20px;
+  background: var(--tertiary-color);
+  color: #333;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #f39c12;
+}
+
+.option-btn:hover {
+  background: #ffcc00;
+  box-shadow: 0 10px 20px rgba(243, 156, 18, 0.3);
+}
+
+.result-animated {
+  animation: zoomIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.kid-result {
+  margin-bottom: 2rem;
+}
+
+.result-title {
+  font-size: 3.5rem;
+  color: #fb5151;
+  margin-bottom: 1rem;
+}
+
+.result-desc-kid {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.parent-result {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border: 2px solid #845EC2;
+  text-align: left;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.parent-title {
+  font-family: var(--font-body);
+  font-weight: 800;
+  color: #845EC2;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+.parent-text {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.recommendation-title {
+  font-family: var(--font-body);
+  font-weight: 800;
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.recommendation-list {
+  font-family: var(--font-body);
+  padding-left: 1.5rem;
+  list-style-type: square;
+}
+
+.recommendation-list li {
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.restart-btn {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.5); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@media (max-width: 600px) {
+  .options-grid { grid-template-columns: 1fr; }
+  .game-section { padding: 1.5rem; }
+  .game-question { font-size: 1.8rem; }
+}

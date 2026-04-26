@@ -1,0 +1,38 @@
+.app-container {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-content {
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--quaternary-color);
+  text-shadow: 3px 3px 0px white;
+  margin-bottom: 2rem;
+  animation: pulse-soft 3s infinite ease-in-out;
+}
+
+.mascot-image {
+  max-width: 200px;
+  height: auto;
+  animation: float 4s infinite ease-in-out;
+  filter: drop-shadow(0px 10px 15px rgba(0,0,0,0.2));
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.2rem;
+  }
+}

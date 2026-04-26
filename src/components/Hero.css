@@ -1,0 +1,70 @@
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 4rem 2rem;
+  margin-top: 2rem;
+}
+
+.hero-title {
+  font-size: 5rem;
+  margin-bottom: 0.5rem;
+  animation: pulse-soft 2s infinite alternate;
+}
+
+.title-word.color-1 { color: #FF6B6B; text-shadow: 2px 2px white; }
+.title-word.color-2 { color: #4ECDC4; text-shadow: 2px 2px white; }
+.title-word.color-3 { color: #FFE66D; text-shadow: 2px 2px white; }
+
+.hero-subtitle {
+  font-size: 2.5rem;
+  color: var(--quaternary-color);
+  margin-bottom: 1rem;
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.start-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  padding: 20px 40px;
+  background: linear-gradient(45deg, #FF6B6B, #FF8E53);
+}
+
+.btn-icon {
+  width: 30px;
+  height: 30px;
+  animation: float 2s infinite ease-in-out;
+}
+
+.hero-decorations div {
+  position: absolute;
+  font-size: 4rem;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.planet-1 { top: 10%; right: 10%; animation: float 6s infinite ease-in-out; }
+.star-1 { top: 20%; left: 15%; animation: wiggle 3s infinite ease-in-out; font-size: 3rem !important;}
+.star-2 { bottom: 20%; right: 25%; animation: float 4s infinite ease-in-out reverse; font-size: 2rem !important; }
+.rocket-img { bottom: 10%; left: 10%; font-size: 5rem !important; transform: rotate(45deg); animation: float 5s infinite; }
+
+@media (max-width: 768px) {
+  .hero-title { font-size: 3.5rem; }
+  .hero-subtitle { font-size: 1.8rem; }
+  .hero-decorations div { font-size: 2.5rem; }
+}
